@@ -7,11 +7,18 @@ console.log("Dale! ponele media pilas")
 // Nicknames property with an array value. Array contains strings.
 // Age property with an integer value
 
-myPet = {
+const myPet = {
     name: "Dori",
     species: "cat",
     nicknames: ["dorita", "dd", "socks"],
     age: 7,
+    purrs: function (something) {
+        window.alert(`Dori purrs 'meoww' when ${something} gets home.`)
+    }
 }
 
-console.log(myPet)
+
+myPet.purrs('me')
+myPet.purrs('Lina')
+myPet.purrs('strangers')
+// console.log(myPet)
